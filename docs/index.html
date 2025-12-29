@@ -1,37 +1,58 @@
+<!--index page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACatWOEM :3</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>
-        This is a Header!
-    </h1>
-    <i>BUT GET READY...</i>
-    <u>Because these are elements!</u>
-    <b>BOOM! BOOM! BOOM! BOOM! BOOM!</b>
-    <s><p>strikeout too</p></s>
-    <u><b><i><s><p>AND YOU CAN COMBINE THEM ALL TOGETHER!!!!</s></i></b></u></p>
-    <p>Just surround your text with the attributes you want such as: &lt;u&gt; for 
-        underline, &lt;b&gt; for bold, &lt;i&gt; for italics, &lt;s&gt; s for strike<p>
-    <p>This is what that code looks like:</p>
-    <img
-        src = "code.png"
-        alt = "code example"
-        width = "600"
-    >
-    <p>With reference to the how the image is there too (lt and gt represent the less than and greater than symbols)</p>
-    <p><a href="https://youtu.be/DLzxrzFCyOs?autoplay=1" target="_blank">
-        <button>
-            Buttons!!!
+<body style="background-color: plum;">
+    <div class="Header-left" style="font-size: 50px; padding-bottom: 25px;">
+        ACatWOEM <img src="./images/paw.png" width="40" height="40">
+        <audio id="audio" autoplay muted loop>
+            <source src="./audio/sewerslvt-thelastthingshesentme.mp3" type="audio/mp3">
+            OOPSIE your browser do not be supporting the audio format &gt;_&lt;
+        </audio>
+        <button id="muteButton" onclick="toggleMute()" onclick="changeStatus()">
+            <img id="muteStatus" src="./images/muted.png" width="40">
         </button>
-    </a></p>
+    </div>
+    <div style="align-content: center;">
+        <i>BUT GET READY...</i>
+        <u>Because these are elements!</u>
+        <b>BOOM! BOOM! BOOM! BOOM! BOOM!</b>
+        <s><p>strikeout too</p></s>
+        <u><b><i><s><p>AND YOU CAN COMBINE THEM ALL TOGETHER!!!!</p></s></i></b></u>
+        <p>Just surround your text with the attributes you want such as: &lt;u&gt; for 
+            underline, &lt;b&gt; for bold, &lt;i&gt; for italics, &lt;s&gt; s for strike<p>
+        <p>This is what that code looks like:</p>
+        <img
+            src = "./images/code.png"
+            alt = "code example"
+            width = "600"
+        >
+        <p>With reference to the how the image is there too (lt and gt represent the less than and greater than symbols)</p>
+    </div>
+    <div>
+        <form>
+            <label for="search">Search (this does nothing)</label>
+            <input type="text" name="search" id="search">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div>
+        <p><a class="button" href="https://youtu.be/DLzxrzFCyOs?autoplay=1" target="_blank">
+            <button>
+                Buttons!!!
+            </button>
+        </a></p>
+        <p><a class="button" href="./resume.html">
+            <button>
+                Open Resume
+            </button>
+        </a></p>
+    </div>
+    <script src="index.js"></script>
 </body>
-    <p></p><a class="Resume button" href="./resume.html">
-        <button>
-            Open Resume
-        </button>
-    </a></p>
 </html>
