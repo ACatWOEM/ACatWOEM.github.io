@@ -1,6 +1,19 @@
 body{
     font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
 }
+.container{
+    display: flex;
+}
+.item{
+    padding-right: 0%;
+}
+#codePicture{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    object-fit: cover;
+}
 #muteButton{
     border: none;
     background-color: transparent;
